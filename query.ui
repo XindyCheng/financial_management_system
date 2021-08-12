@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Query</class>
+ <widget class="QWidget" name="Query">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>908</width>
+    <height>454</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Query</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="1" column="6">
+      <widget class="QDateEdit" name="dateEdit_2">
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <spacer name="verticalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="1" column="2">
+      <widget class="QDateEdit" name="dateEdit">
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>分类</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>起始日期</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QComboBox" name="comboBox_classify">
+       <item>
+        <property name="text">
+         <string>全部</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>收入</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>支出</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>借款</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="1" column="4">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>结束日期</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="8">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>操作账户</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="4" column="1">
+      <spacer name="verticalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="3" column="6">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QComboBox" name="comboBox_spending">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <item>
+          <property name="text">
+           <string>全部</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>食物</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>交通</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>购物</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>寝室</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>娱乐</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>学习</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>医疗</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>其他</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_lender">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <item>
+          <property name="text">
+           <string>全部</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>朋友</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>家人</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>银行贷款</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>花呗</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>京东白条</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>其他</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_income">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <item>
+          <property name="text">
+           <string>全部</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>生活费</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>兼职</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>奖学金</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>利息</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>贷款</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>其他</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="10">
+      <widget class="QComboBox" name="comboBox_account">
+       <item>
+        <property name="text">
+         <string>全部</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>微信</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>银行卡</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>一卡通</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>现金</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>其他</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="1" column="11">
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="1" column="3">
+      <spacer name="horizontalSpacer_5">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="3" column="10">
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>查询</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="4">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>标签</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="7">
+      <spacer name="horizontalSpacer_6">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_6">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_guide">
+       <property name="text">
+        <string>欢迎使用本系统！</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_back">
+       <property name="text">
+        <string>返回</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_5">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <spacer name="horizontalSpacer_8">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="verticalScrollBarPolicy">
+        <enum>Qt::ScrollBarAsNeeded</enum>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QAbstractScrollArea::AdjustToContents</enum>
+       </property>
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+       <property name="selectionMode">
+        <enum>QAbstractItemView::SingleSelection</enum>
+       </property>
+       <property name="selectionBehavior">
+        <enum>QAbstractItemView::SelectRows</enum>
+       </property>
+       <property name="textElideMode">
+        <enum>Qt::ElideRight</enum>
+       </property>
+       <property name="gridStyle">
+        <enum>Qt::SolidLine</enum>
+       </property>
+       <property name="sortingEnabled">
+        <bool>false</bool>
+       </property>
+       <column>
+        <property name="text">
+         <string>日期</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>分类</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>金额</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>操作账户</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>标签</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_7">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_4">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>tableWidget</sender>
+   <signal>cellClicked(int,int)</signal>
+   <receiver>Query</receiver>
+   <slot>guide_show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>428</x>
+     <y>384</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>16</x>
+     <y>348</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tableWidget</sender>
+   <signal>cellDoubleClicked(int,int)</signal>
+   <receiver>Query</receiver>
+   <slot>doubleClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>369</x>
+     <y>384</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>96</x>
+     <y>357</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dateEdit</sender>
+   <signal>dateChanged(QDate)</signal>
+   <receiver>Query</receiver>
+   <slot>on_dateEdit_dateChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>259</x>
+     <y>65</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>9</x>
+     <y>71</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dateEdit_2</sender>
+   <signal>dateChanged(QDate)</signal>
+   <receiver>Query</receiver>
+   <slot>on_dateEdit_2_dateChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>517</x>
+     <y>65</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>17</x>
+     <y>115</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_account</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>Query</receiver>
+   <slot>on_comboBox_account_currentIdexChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>758</x>
+     <y>67</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>720</x>
+     <y>19</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_classify</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>Query</receiver>
+   <slot>on_comboBox_classify_currentIdexChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>259</x>
+     <y>157</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>118</x>
+     <y>122</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_spending</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>Query</receiver>
+   <slot>on_comboBox_spending_currentIdexChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>516</x>
+     <y>134</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>520</x>
+     <y>135</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_lender</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>Query</receiver>
+   <slot>on_comboBox_lender_currentIdexChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>516</x>
+     <y>157</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>458</x>
+     <y>145</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_income</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>Query</receiver>
+   <slot>on_comboBox_income_currentIdexChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>516</x>
+     <y>180</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>418</x>
+     <y>154</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>guide_show()</slot>
+  <slot>on_pushButton_clicked()</slot>
+  <slot>on_dateEdit_dateChanged()</slot>
+  <slot>on_dateEdit_2_dateChanged()</slot>
+  <slot>on_comboBox_account_currentIdexChanged()</slot>
+  <slot>on_comboBox_classify_currentIdexChanged()</slot>
+  <slot>on_comboBox_income_currentIdexChanged()</slot>
+  <slot>on_comboBox_spending_currentIdexChanged()</slot>
+  <slot>on_comboBox_lender_currentIdexChanged()</slot>
+  <slot>doubleClicked()</slot>
+ </slots>
+</ui>

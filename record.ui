@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Record</class>
+ <widget class="QWidget" name="Record">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>671</width>
+    <height>388</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Record</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <spacer name="verticalSpacer_5">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="2" column="3">
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="5" column="1">
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="3" column="0">
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>标签：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="5">
+      <widget class="QLineEdit" name="lineEdit_money">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QDateEdit" name="dateEdit">
+       <property name="currentSection">
+        <enum>QDateTimeEdit::DaySection</enum>
+       </property>
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <spacer name="verticalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="2" column="4">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>金额：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>日期：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="6">
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="6" column="2">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QComboBox" name="comboBox_spending">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <item>
+          <property name="text">
+           <string>美食</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>交通</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>购物</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>寝室</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>娱乐</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>学习</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>医疗</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>其他</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_lender">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <item>
+          <property name="text">
+           <string>朋友</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>家人</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>银行贷款</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>花呗</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>京东白条</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>其他</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_income">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <item>
+          <property name="text">
+           <string>生活费</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>兼职</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>奖学金</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>利息</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>贷款</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>其他</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="4" column="5">
+      <widget class="QComboBox" name="comboBox_account">
+       <item>
+        <property name="text">
+         <string>请选择...</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>微信</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>银行卡</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>一卡通</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>现金</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>其他</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="4" column="4">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>操作账户：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>分类：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QComboBox" name="comboBox_classify">
+       <item>
+        <property name="text">
+         <string>请选择...</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>收入</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>支出</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>借款</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="6" column="6">
+      <spacer name="verticalSpacer_7">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_4">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <spacer name="horizontalSpacer_5">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>欢迎使用本系统！</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_6">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_back">
+       <property name="text">
+        <string>返回</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_save">
+       <property name="text">
+        <string>保存</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_7">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_6">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>comboBox_account</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>Record</receiver>
+   <slot>on_comboBox_account_currentIdexChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>537</x>
+     <y>120</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>273</x>
+     <y>205</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_classify</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>Record</receiver>
+   <slot>on_comboBox_classify_currentIdexChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>235</x>
+     <y>120</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>579</x>
+     <y>206</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_income</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>Record</receiver>
+   <slot>on_comboBox_income_currentIdexChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>204</x>
+     <y>224</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>200</x>
+     <y>232</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_lender</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>Record</receiver>
+   <slot>on_comboBox_lender_currentIdexChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>234</x>
+     <y>196</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>256</x>
+     <y>234</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_spending</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>Record</receiver>
+   <slot>on_comboBox_spending_currentIdexChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>215</x>
+     <y>171</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>218</x>
+     <y>265</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_save</sender>
+   <signal>clicked()</signal>
+   <receiver>Record</receiver>
+   <slot>on_pushButton_save_cliked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>353</x>
+     <y>338</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>432</x>
+     <y>325</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>on_comboBox_account_currentIdexChanged()</slot>
+  <slot>on_comboBox_classify_currentIdexChanged()</slot>
+  <slot>on_pushButton_save_cliked()</slot>
+  <slot>on_comboBox_income_currentIdexChanged()</slot>
+  <slot>on_comboBox_spending_currentIdexChanged()</slot>
+  <slot>on_comboBox_lender_currentIdexChanged()</slot>
+ </slots>
+</ui>
